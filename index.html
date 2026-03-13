@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Inter & Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="gradient-bg">
+        <div class="gradient-1"></div>
+        <div class="gradient-2"></div>
+        <div class="gradient-3"></div>
+    </div>
+
+    <!-- Modern Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-cube"></i>
+                <span>Nexus</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="submissions.html">
+                    <i class="fas fa-database"></i>
+                    <span>Submissions</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <h1 class="gradient-text">Get in Touch</h1>
+                <p class="hero-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            </div>
+
+            <!-- Modern Form Card -->
+            <div class="form-card glass-card">
+                <div class="form-header">
+                    <div class="form-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <h2>Send Message</h2>
+                    <p>Fill out the form below</p>
+                </div>
+
+                <form id="contactForm" class="modern-form">
+                    <!-- Name Input with Floating Label -->
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <i class="fas fa-user input-icon"></i>
+                            <input type="text" id="name" placeholder=" " autocomplete="off">
+                            <label for="name">Full Name</label>
+                            <div class="input-border"></div>
+                        </div>
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+
+                    <!-- Email Input with Floating Label -->
+                    <div class="input-group">
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope input-icon"></i>
+                            <input type="email" id="email" placeholder=" " autocomplete="off">
+                            <label for="email">Email Address</label>
+                            <div class="input-border"></div>
+                        </div>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+
+                    <!-- Message Textarea with Floating Label -->
+                    <div class="input-group">
+                        <div class="input-wrapper textarea-wrapper">
+                            <i class="fas fa-pen input-icon"></i>
+                            <textarea id="message" placeholder=" " rows="4"></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="input-border"></div>
+                        </div>
+                        <div class="error-message" id="messageError"></div>
+                    </div>
+
+                    <!-- Submit Button with Ripple Effect -->
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </span>
+                        <div class="ripple"></div>
+                    </button>
+                </form>
+
+                <!-- Success Toast (Hidden by default) -->
+                <div class="toast success-toast" id="successToast">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Message sent successfully!</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
